@@ -1,9 +1,8 @@
-import React from 'react'
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Home from './Home'
-import PaymentSuccess from './PaymentSuccess'
-// secret =WeVuFA0MijnWwTXcIvI9xQ55
-// keyid=rzp_test_1NdqZOSQdTLlim
+import PaymentSuccess from './pages/PaymentSuccess'
+import PaymentFail from "./pages/PaymentFail"
+
 
 const App = () => {
   return (
@@ -11,6 +10,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/paymentsuccess' element={<PaymentSuccess/>}/>
+        <Route path='/failure' element={<PaymentFail/>}/>
       </Routes>
     </Router>
   )
