@@ -1,5 +1,5 @@
 const crypto =require("crypto");
-const Payment = require('../models/paymentschema');
+const Payment = require('../models/paymentschema.js');
 
 
 exports.paymentVeri=async(req,res)=>{

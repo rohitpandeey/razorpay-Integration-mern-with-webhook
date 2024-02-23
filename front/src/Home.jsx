@@ -8,7 +8,7 @@ const [amount, setAmount] = useState(null);
 const navigate = useNavigate();
 
 const checkouthandler = async () => {
-    const { data: { key },} = await axios.get("http://localhost:8000/api/getkey");
+    const key="rzp_test_MTN6TzSUSv2s46";
     const {data: { order },} = await axios.post("http://localhost:8000/order", { amount });
     console.log(window);
     const options = {
